@@ -1,16 +1,15 @@
 AOS.init();
 
-//faq toggle stuff 
-$('.toggle-link').click(function(e) {
-    e.preventDefault();
-    var notthis = $('.active').not(this);
-    notthis.toggleClass('active').next('.toggle-image').slideToggle(300);
-    $(this).toggleClass('active').next().slideToggle("fast");
+//toggle stuff 
+
+$('.toggle-link').on('click', function() {
+	$parent_box = $(this).closest('.toggle-data');
+	$parent_box.siblings().find('.toggle-image').hide();
+	$parent_box.find('.toggle-image').toggle();
 });
 
 
 //lift-up
-
 
 var $_ = {
     init: function () {

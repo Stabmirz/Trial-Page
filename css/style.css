@@ -28,10 +28,8 @@ body{
 }
 
 .main-container{
-  -ms-flex: 1 0 auto;
   width: 90%;
   margin: auto;
-  flex: 1 0 auto;
   display: block;
   overflow: hidden;
 }
@@ -87,7 +85,7 @@ body{
   position: relative;
   font-size: 165px;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.6;
   text-transform: none;
   margin: 0; 
   color: #000;
@@ -156,11 +154,9 @@ h4 {
   z-index: 1;
 }
 
-
 .home-form-wrapper {
   position: relative;
 }
-
 
 .logo {
   max-width: 458px;
@@ -190,6 +186,14 @@ h4 {
   font-size: 113px;
 }
 
+.home-title.heading-up{
+  text-align: left;
+  margin-bottom:-50px;
+}
+
+.home-title.heading-down{
+  text-align: right;
+}
 
 .home-icon{
   display: block;
@@ -268,36 +272,42 @@ p.features-text {
   margin-left:520px;
 }
 
-.toggle h5{
+h5{
   color: #cbe1ee;
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
 }
 
+.toggle-datas{
+  margin-top:50px;
+}
+
 .toggle-data{
-  margin-left:45px;
-  margin-top:30px;
+  margin-top:25px;
+  padding: 5px 2px;
   background-color: white;
-  box-shadow: 0 4px 20px rgba(202, 233, 243, 0.664);
+  box-shadow: 0 2px 10px rgba(208, 234, 243, 0.664);
 }
 
 .toogle-heading{
   margin-top:15px;
 }
 
+p.toggle-text{
+  margin-top: 1rem;
+  font-size: 21px;
+  font-weight: 300;
+  padding: 5px 0px;
+  line-height: 1;
+}
+
 .toggle-image{
   display: none;
-  padding: 8px 20px 0 30px; 
-  height: auto;
 }
 
 .toggle-image img {
   width:100%;
-}
-
-.toggle-data a{
-  margin-left:-5pc;
 }
 
 .toggle-data a:hover{
@@ -308,25 +318,42 @@ p.features-text {
 .toggle-link {
   text-decoration: none;
   color: #193347;
-  background-color: white;
   font-size: 18px;
-  padding: 3px 30px;
+  padding: 0px 10px;
   display: block;
   margin-bottom: -1px;
   font-weight:600;
 }
 
 .check-icon{
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   display: block;
   background-image: url(../images/svg/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
   float:left;
-  margin-right: 50px;
+  margin: auto 20px auto auto;
 }
+
+/* pricing */
+
+.pricing, .engagement, .manage{
+  position: relative;
+  padding: 5% 5% 0%;
+}
+
+.pricing-row, .manage-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-row .cl-2, .manage-row .cl-2{
+  margin-top: 60px;
+}
+
+
 
 /* about our content */
 
@@ -991,7 +1018,7 @@ label.lms-text span{
 
 .footer {
   position: relative;
-  padding: 200px 0 20px;
+  padding: 200px 0 20px 80px;
 }
 
 .footer-logo-wrap {
