@@ -107,19 +107,17 @@ h4 {
 
 
 .link-style {
-  display: inline-block;
   color: #f7a140;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 1;
-  line-height: 2.72;
-  text-decoration: underline;
-  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 1px solid #f7a140;
+  text-decoration: none;
+  font-size: 20px;
   text-shadow: 0 7px 9px rgba(33, 62, 83, 0.12);
 } 
 
 .link-style:hover {
   color: #f7a140;
+  text-decoration: none;
 } 
 
 .small-icon-wrap {
@@ -130,10 +128,11 @@ h4 {
 /* Home */
 
 .home {
-  padding: 60px 0 60px;
+  padding: 60px 0 0 60px;
 }
 
 .home-row {
+  margin-top:20px;
   display: flex;
   justify-content: space-between;
 }
@@ -141,7 +140,12 @@ h4 {
 .home-col-1 {
   position: relative;
   width:35%;
-  margin: 0 auto;
+  margin: 0 auto 0 20px;
+}
+
+.request{
+  margin-top: 30px;
+  margin-bottom: -25px;
 }
 
 .home-col-2 {
@@ -150,8 +154,11 @@ h4 {
   margin: 0 auto;
 }
 
-.home-col:first-child {
-  z-index: 1;
+.home-text{
+  color:#3f8bbd;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.3;
 }
 
 .home-form-wrapper {
@@ -159,7 +166,7 @@ h4 {
 }
 
 .logo {
-  max-width: 458px;
+  max-width: 400px;
 }
 
 .logo img {
@@ -233,17 +240,22 @@ h4 {
 
 /* Features */
 
-.features{
-  width:80%;
-  margin:auto auto 160px auto;
+.features-body{
+  width:85%;
+  margin:30px 20px 0px 160px;
 }
 
 .features-row {
   display: flex;
+  justify-content: space-between;
 }
 
 .features-col {
   width: 50%;
+}
+
+h3{
+  font-weight:700;
 }
 
 p.features-text {
@@ -251,8 +263,16 @@ p.features-text {
   font-weight: 300;
 }
 
-.fa{
-  font-size: initial;
+.icon{
+  height: 25px;
+  width: 25px;
+  display: block;
+  background-image: url(../images/chackmark-blue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  float:left;
+  margin: 2px 5px auto auto ;
 }
 
 
@@ -260,16 +280,17 @@ p.features-text {
 
 .toggle {
   position: relative;
-  padding: 0% 0% 0% 5%;
+  padding: 0% 5%;
 }
 
 .toggle .custom-title.heading-up{
   text-align: left;
-  margin-bottom:-25px;
+  margin-bottom:-125px;
 }
 
 .toggle .custom-title.heading-down{
   margin-left:520px;
+  margin-bottom:-60px;
 }
 
 h5{
@@ -280,10 +301,11 @@ h5{
 }
 
 .toggle-datas{
-  margin-top:50px;
+  margin:50px 15px;
 }
 
 .toggle-data{
+  cursor: pointer;
   margin-top:25px;
   padding: 5px 2px;
   background-color: white;
@@ -299,7 +321,7 @@ p.toggle-text{
   font-size: 21px;
   font-weight: 300;
   padding: 5px 0px;
-  line-height: 1;
+  line-height: 1.3;
 }
 
 .toggle-image{
@@ -319,29 +341,33 @@ p.toggle-text{
   text-decoration: none;
   color: #193347;
   font-size: 18px;
-  padding: 0px 10px;
-  display: block;
+  padding: 10px 10px;
   margin-bottom: -1px;
   font-weight:600;
+  display: flex;
+}
+
+.icon-div{
+  width:20px;
+  margin: auto 30px;
 }
 
 .check-icon{
-  height: 50px;
-  width: 50px;
+  height: 20px;
+  width: 20px;
   display: block;
-  background-image: url(../images/svg/arrow.svg);
+  background-image: url(../images/chackmark-blue.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 40%;
   float:left;
-  margin: auto 20px auto auto;
+  margin: auto ;
 }
 
 /* pricing */
 
 .pricing, .engagement, .manage{
   position: relative;
-  padding: 5% 5% 0%;
+  padding: 2% 5% 0%;
 }
 
 .pricing-row, .manage-row{
@@ -350,7 +376,7 @@ p.toggle-text{
 }
 
 .pricing-row .cl-2, .manage-row .cl-2{
-  margin-top: 60px;
+  margin-top: 90px;
 }
 
 
@@ -409,35 +435,6 @@ p.toggle-text{
   position: relative;
 }
 
-.anim-icon-wrap-icon {
-  position: absolute;
-  display: block;
-}
-
-.anim-icon-wrap-icon:nth-child(1) {
-  max-width: 72%;
-  left: 10%;
-  top: 20%;
-}
-
-.anim-icon-wrap-icon:nth-child(2) {
-  max-width: 30%;
-  left: 70%;
-  top: 41%;
-}
-
-.anim-icon-wrap-icon:nth-child(3) {
-  max-width: 50%;
-  left: -5%;
-  top: 54%;
-}
-
-.anim-icon-wrap-icon:nth-child(4) {
-  max-width: 33%;
-  left: 42%;
-  top: 75%;
-}
-
 .content-icon{
   display: block;
   position: absolute;
@@ -492,7 +489,7 @@ p.toggle-text{
   border-radius: 10px;
   height: 70px;
   box-shadow: 0 15px 25px rgba(25, 51, 71, 0.1), inset 0 -5px 0 rgba(0, 0, 0, 0.1);
-  background-color: #d2de40;
+  background-color: #d3de3f;
   background-image: linear-gradient(25deg, rgba(195, 216, 46, 0.5) 0%, rgba(230, 231, 93, 0.5) 100%);
 } 
 
@@ -647,14 +644,6 @@ button.btn-style:focus{
 /********************
     form
 *********************/
-/* 
-.app-form {
-  position: relative;
-  text-align: center;
-  padding: 150px 0px 0px 0px;
-} */
-
-
 
 input.hs-button.primary.large{
   border:none;
@@ -675,9 +664,9 @@ input.hs-button.primary.large{
   font-size: 26px;
   font-weight: 900;
   border-radius: 7px;
-  height: 60px;
+  height: 65px;
   box-shadow: 0 15px 25px rgba(25, 51, 71, 0.1), inset 0 -5px 0 rgba(0, 0, 0, 0.1);
-  background-color: #d2de40;
+  background-color: #d3de3f;
   background-image: linear-gradient(25deg, rgba(195, 216, 46, 0.5) 0%, rgba(230, 231, 93, 0.5) 100%);
 }
 
@@ -691,25 +680,22 @@ input.hs-button.primary.large:hover{
 }
 
 .hs-form label{
-  position: absolute;
-  /* top:-45px; */
   opacity: 0.6;
   color: #193347;
   font-size: 20px;
   font-weight: 400;
+  margin-left: 30px;
+  z-index: 10;
+  position: absolute;
+  top:25px;
 }
 
-.hs-form label.left {
-  /* left: 45px; */
-  display: none;
+label#label-numemployees-ecc29b24-00c4-42c3-8215-f31ba412f934,
+label#label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934{
+  top:-50px;
 }
 
-.hs-form label.right {
-  /* right: 45px; */
-  display: none;
-}
-
-.input .hs-input{
+.hs-input{
   border: none;
   outline: none;
   position: relative;
@@ -718,7 +704,6 @@ input.hs-button.primary.large:hover{
   border-radius: 5px;
   width: 100%;
   height: 80px;
-  padding: 10px 40px;
   box-shadow: 0 13px 50px rgba(219,235,244,0.6);
   background-color: #fff;
   color: #000;
@@ -727,23 +712,27 @@ input.hs-button.primary.large:hover{
   -webkit-appearance: none;
 }
 
-.hs_email, .hs_phone, .hs_numemployees{
-  /* float: right; */
-  /* width:47%; */
-}
-
-.hs_firstname, .hs_lastname, .hs_company{
-  /* float:left; */
-  /* width: 47%; */
-}
-
-select{
-  font-size: 18px;
+.hs-numemployees select{
   -webkit-appearance: none;
   -moz-appearance: none;
   background: url(../images/svg/arrow.svg) no-repeat;
+  background-color: white;
   background-position: 10% 50%;
+  background-size: 18px;
+  padding: 0px 50px;
   text-align-last: end;
+  font-size: 20px;
+}
+
+.hs_how_many_topics_do_you_train_on_annually_ select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/svg/arrow.svg) no-repeat;
+  background-color: white;
+  background-position: 90% 50%;
+  background-size: 18px;
+  padding: 0px 40px;
+  font-size: 20px;
 }
 
 .hs-form-radio .hs-input{
@@ -752,22 +741,11 @@ select{
   width:auto;
 }
 
-/* .hs-form label.hs-form-radio-display{
-  position: relative;
-  top:0px;
-  left: 0px;
-  opacity: 1;
-  color: #193347;
-  font-size: 20px;
-  font-weight: 400;
-} */
-
 ul{
   list-style-type: none;
   display: flex;
-  width: 40%;
-  margin: auto;
-  padding-top: 3%;
+  justify-content: space-around;
+  width: 90%;
 }
 
 li{
@@ -781,12 +759,6 @@ li{
 
 .hs_radio_select_property.field.hs-form-field{
   margin-bottom: 0;
-}
-
-label.lms-text span{
-  display: inline-block;
-  width: 59em;
-  text-align: center;
 }
 
 [type="radio"]:checked,
@@ -811,9 +783,9 @@ label.lms-text span{
   content: '';
   position: absolute;
   top: -17px;
-  right: -85px;
-  width: 60px;
-  height: 60px;
+  right: -77px;
+  width: 63px;
+  height: 63px;
   box-shadow: 0 15px 25px rgba(25, 51, 71, 0.1), inset 2px 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #f6fafd;
   border: 15px solid rgb(255, 255, 255);
@@ -833,37 +805,44 @@ label.lms-text span{
   border-top-left-radius: 100%;
 }
 
-#label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934, .hs-numemployees, .hs_do_you_have_an_lms_radio{
-  width:50%;
+#label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934{
+  width:46%;
+  top: 15px;
+}
+
+.hs-numemployees{
+  width:46%;
   float: left;
-  top:0;
+  margin: 50px auto 0px auto;
+}
+
+.hs_do_you_have_an_lms_radio{
+  width:46%;
+  float: right;
+  margin: 50px auto 0px auto;
 }
 
 .hs_how_many_topics_do_you_train_on_annually_{
   clear: left;
 }
 
-
 .hs_how_many_topics_do_you_train_on_annually_ .input{
   float: right;
-  width:50%;
-}
-
-#inputBox{
-  display: none;
-  margin-top: 0px;
+  width:46%;
+  margin: auto;
 }
 
 [type="radio"]:checked + span:after,
 [type="radio"]:not(:checked) + span:after {
   content: '';
-  width: 30px;
-  height: 30px;
+  width: 63px;
+  height: 63px;
   box-shadow: 0 15px 25px rgba(25, 51, 71, 0.1), inset 0 -5px 0 rgba(0, 0, 0, 0.1);
-  background-color: #d2de40;
+  background-color: #d3de3f;
+  border: 15px solid rgb(255, 255, 255);
   position: absolute;
-  right: -69px;
-  top:0;
+  right: -77px;
+  top:-17px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -873,25 +852,6 @@ label.lms-text span{
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
-}
-
-.form-row-btn{
-  max-width: 1170px;
-  padding: 0px;
-  position: relative;
-  display: flex;
-  margin-top: 55px;
-  justify-content: space-between;
-}
-
-
-.form-label {
-  color: rgba(25, 51, 71, 0.41);
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.41;
-  text-align: right;
-  margin-right: 80px;
 }
 
 .hs_submit{
