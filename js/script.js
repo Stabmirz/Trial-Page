@@ -3,9 +3,11 @@ AOS.init();
 //toggle stuff 
 
 $('.toggle-link').on('click', function() {
-	$parent_box = $(this).closest('.toggle-data');
+    $parent_box = $(this).closest('.toggle-data');
 	$parent_box.siblings().find('.toggle-image').hide();
 	$parent_box.find('.toggle-image').toggle();
+    $("div.contact>img").addClass("hide-image");
+
 });
 
 
