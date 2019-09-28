@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
@@ -35,11 +38,11 @@
                         </div>
                         <div class="home-col-2" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
                             <div class="small-icon-wrap" data-aos="fade-up" data-aos-once="true" data-aos-delay="400">
-                                <img class="home-icon" src="images/svg/bgobj55.svg" alt="" role="presentation" />
+                                <!-- <img class="home-icon" src="images/svg/bgobj55.svg" alt="" role="presentation" />
                                 <img class="home-icon" src="images/svg/bgobj41.svg" alt="" role="presentation" />
                                 <img class="home-icon" src="images/svg/bgobj44.svg" role="presentation" />
                                 <img class="home-icon" src="images/svg/bgobj43.svg" role="presentation" />
-                                <img class="home-icon" src="images/svg/bgobjV3.svg" alt="" role="presentation" />
+                                <img class="home-icon" src="images/svg/bgobjV3.svg" alt="" role="presentation" /> -->
                             </div>
                             <div class="home-form-wrapper">
                                 <div class="hbspt-form" id="hbspt-form-1569257879466-2359451822">
@@ -62,6 +65,7 @@
                 </div>
             </div>
         </div>
+
         <div class="content-wrapper">
             <div class="features">
                 <div class="container">
@@ -91,41 +95,72 @@
                     <h2 class="custom-title heading-down" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">limited</h2>
                     <h5>From training to record keeping, SafetySoft improves your scope.</h5>
                     <div class="toggle-datas">
-                        <div class="toggle-data" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-                            <div class="toggle-image">
-                                <img src="trial-imgs/1.jpg">
+                        <div class="panel-group" id="toggle">
+                            <div class="panel">
+                                <div id="image1" class="panel-collapse collapse toggle-image">
+                                    <div class="panel-body">
+                                        <img src="images/1.jpg">
+                                    </div>
+                                </div>
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#toggle" href="#image1">
+                                    <div class="panel-title">
+                                        <div class="icon-div"><i class="check-icon"></i></div>
+                                        <div><p class="toggle-text">Receive the latest topic updates, new feature alerts and known issue notifications straight from your dashboard.</p></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="toggle-link">
-                                <div class="icon-div"><i class="check-icon"></i></div><p class="toggle-text">Receive the latest topic updates, new feature alerts and known issue notifications straight from your dashboard.</p> 
+                            <div class="panel">
+                                <div id="image2" class="panel-collapse collapse in toggle-image">
+                                    <div class="panel-body">
+                                        <img src="images/2.jpg">
+                                    </div>
+                                </div>
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#toggle" href="#image2">
+                                    <div class="panel-title">
+                                        <div class="icon-div"><i class="check-icon"></i></div>
+                                        <div><p class="toggle-text">Train employees with a robust library that covers all of your bases. Don’t see a topic you need? Create your own training courses in SafetySoft with our Course Builder feature using 100’s of PowerPoints, checklists and more.</p> </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="toggle-data" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-                            <div class="toggle-image">
-                                <img src="trial-imgs/2.jpg">
+                            <div class="panel">
+                                <div id="image3" class="panel-collapse collapse toggle-image">
+                                    <div class="panel-body">
+                                        <img src="images/1171051759758598144.png">
+                                    </div>
+                                </div>
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#toggle" href="#image3">
+                                    <div class="panel-title">
+                                        <div class="icon-div"><i class="check-icon"></i></div>
+                                        <div><p class="toggle-text">Record employee training progress and scores, along with other important documentation. From near-misses to incident management reports and HR notes, keep all of your important information housed in your own portal.</p> </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="toggle-link">
-                                <div class="icon-div"><i class="check-icon"></i></div><p class="toggle-text">Train employees with a robust library that covers all of your bases. Don’t see a topic you need? Create your own training courses in SafetySoft with our Course Builder feature using 100’s of PowerPoints, checklists and more.</p> </div>
-                        </div>
-                        <div class="toggle-data" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-                            <div class="toggle-image">
-                                <img src="trial-imgs/4.jpg">
+                            <div class="panel">
+                                <div id="image4" class="panel-collapse collapse toggle-image">
+                                    <div class="panel-body">
+                                        <img src="images/4.jpg">
+                                    </div>
+                                </div>
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#toggle" href="#image4">
+                                    <div class="panel-title">
+                                        <div class="icon-div"><i class="check-icon"></i></div>
+                                        <div><p class="toggle-text">Don’t get stuck with one avenue of training. SafetySoft offers a blended approach to learning. You can choose to train employees utilizing online courses or hold instructor-led training with Streaming.</p> </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="toggle-link">
-                                <div class="icon-div"><i class="check-icon"></i></div><p class="toggle-text">Record employee training progress and scores, along with other important documentation. From near-misses to incident management reports and HR notes, keep all of your important information housed in your own portal.</p> </div>
-                        </div>
-                        <div class="toggle-data" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-                            <div class="toggle-image">
-                                <img src="trial-imgs/3.jpg">
+                            <div class="panel">
+                                <div id="image5" class="panel-collapse collapse toggle-image">
+                                    <div class="panel-body">
+                                        <img src="images/3.jpg">
+                                    </div>
+                                </div>
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#toggle" href="#image5">
+                                    <div class="panel-title">
+                                        <div class="icon-div"><i class="check-icon"></i></div>
+                                        <div><p class="toggle-text">Get the added bonus of hundreds of additional safety training resources included in our Safety Toolbox! PowerPoints, checklists, infographics, toolbox talks and more will help improve your educational reach.</p> </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="toggle-link">
-                                <div class="icon-div"><i class="check-icon"></i></div><p class="toggle-text">Don’t get stuck with one avenue of training. SafetySoft offers a blended approach to learning. You can choose to train employees utilizing online courses or hold instructor-led training with Streaming.</p> </div>
-                        </div>
-                        <div class="toggle-data" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-                            <div class="toggle-image">
-                                <img src="trial-imgs/1171051759758598144.png">
-                            </div>
-                            <div class="toggle-link">
-                                <div class="icon-div"><i class="check-icon"></i></div><p class="toggle-text">Get the added bonus of hundreds of additional safety training resources included in our Safety Toolbox! PowerPoints, checklists, infographics, toolbox talks and more will help improve your educational reach.</p> </div>
                         </div>
                     </div>
                 </div>
@@ -184,39 +219,41 @@
                 </div>
             </div>
         </div>
- 
-        <div class="contact">
+        
+        <div class="contact-section">
             <img class="bg-image" src="images/bg-pattern-5.png" alt="" role="presentation" />
             <div class="content-wrapper">
-                <div class="container">
-                    <div class="contact-row">
-                        <div class="contacts-content-wrap contact-col-1" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-                            <div class="contacts-title">Still have
-                                questions?<span>No worries.</span></div>
-                            <div class="contacts-subtitle">Our SafetySoft
-                                experts will be happy to assist you.</div>
-                            <div class="contacts-title">Contact us at <a
-                                    href="tel:8009757640">800-975-7640</a> today!
-                            </div>
-                            <div class="free-trial-btn">
-                                <div class="contacts-text contacts-btn">or</div>
-                                <div class="btn-style">
-                                    <a href="">
-                                        <span class="btn-style-wrapper">
-                                            <span class="btn-style-text">start a free trial today</span>
-                                        </span>
-                                    </a>
+                <div class="contact">
+                    <div class="container">
+                        <div class="contact-row">
+                            <div class="contacts-content-wrap contact-col-1" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                                <div class="contacts-title">Still have
+                                    questions?<span>No worries.</span></div>
+                                <div class="contacts-subtitle">Our SafetySoft
+                                    experts will be happy to assist you.</div>
+                                <div class="contacts-title">Contact us at <a
+                                        href="tel:8009757640">800-975-7640</a> today!
+                                </div>
+                                <div class="free-trial-btn">
+                                    <div class="contacts-text contacts-btn">or</div>
+                                    <div class="btn-style">
+                                        <a href="">
+                                            <span class="btn-style-wrapper">
+                                                <span class="btn-style-text">start a free trial today</span>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="contacts-image-wrap contact-col-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
-                            <img class="contacts-helmet" src="images/helmet.png" alt="" role="presentation" />
-                            <div class="small-icon-wrap">
-                                <img class="contact-icon" src="images/svg/bgobj71.svg" alt="" role="presentation" />
-                                <img class="contact-icon" src="images/svg/bgobj44.svg" alt=""role="presentation" />
-                                <img class="contact-icon" src="images/svg/bgobj46.svg" alt="" role="presentation" />
-                                <img class="contact-icon" src="images/svg/bgobj43.svg" alt="" role="presentation" />
-                                <img class="contact-icon" src="images/svg/bgobj51.svg" alt="" role="presentation" />
+                            <div class="contacts-image-wrap contact-col-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+                                <img class="contacts-helmet" src="images/helmet.png" alt="" role="presentation" />
+                                <div class="small-icon-wrap">
+                                    <!-- <img class="contact-icon" src="images/svg/bgobj71.svg" alt="" role="presentation" />
+                                    <img class="contact-icon" src="images/svg/bgobj44.svg" alt=""role="presentation" />
+                                    <img class="contact-icon" src="images/svg/bgobj46.svg" alt="" role="presentation" />
+                                    <img class="contact-icon" src="images/svg/bgobj43.svg" alt="" role="presentation" />
+                                    <img class="contact-icon" src="images/svg/bgobj51.svg" alt="" role="presentation" /> -->
+                                </div>
                             </div>
                         </div>
                     </div>

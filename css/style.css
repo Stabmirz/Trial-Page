@@ -11,20 +11,16 @@ html * {
 }
 
 body{
-  background: url(../images/background.png);
+  background: url(../images/background\ copy.png);
   background-color:#dae6ed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-size: cover;
-  /* display: flex;
-  flex-direction: column; */
   color: #193347;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   font-family: 'Poppins';
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .main-container{
@@ -34,7 +30,7 @@ body{
 
 .content-wrapper{
   width: 90%;
-  margin: auto;
+  margin:auto;
 }
 
 .container {
@@ -92,6 +88,7 @@ h4 {
 
 .home {
   padding: 60px 0 0 60px;
+  position: relative;
 }
 
 .home-row {
@@ -107,8 +104,7 @@ h4 {
 }
 
 .request{
-  margin-top: 30px;
-  margin-bottom: -25px;
+  margin-bottom: -40px;
 }
 
 .home-col-2 {
@@ -130,6 +126,7 @@ h4 {
 
 .logo {
   max-width: 400px;
+  padding-bottom:30px;
 }
 
 .logo img {
@@ -201,7 +198,11 @@ h4 {
 }
 
 
-/* Features */
+/* Features Section*/
+
+.features{
+  padding-top: 140px;
+}
 
 .features-body{
   width:85%;
@@ -219,6 +220,7 @@ h4 {
 
 h3{
   font-weight:700;
+  font-size:28px;
 }
 
 p.features-text {
@@ -239,11 +241,18 @@ p.features-text {
 }
 
 
-/* Toggle */
+/* Toggle Section */
 
 .toggle {
   position: relative;
-  padding: 0% 5%;
+  padding: 2% 5% 0% 5%;
+}
+
+.togglt-bg-image {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translate(-10%, 36%);
 }
 
 .toggle .custom-title.heading-up{
@@ -263,16 +272,23 @@ h5{
   font-weight: 700;
 }
 
+.panel-group .panel+.panel{
+  margin-top:25px;
+}
+
+.panel-heading{
+  padding: 0;
+}
+
 .toggle-datas{
   margin:50px 15px;
 }
 
-.toggle-data{
+.panel{
   cursor: pointer;
-  margin-top:25px;
   padding: 5px 2px;
   background-color: white;
-  box-shadow: 0 2px 10px rgba(208, 234, 243, 0.664);
+  box-shadow:4px 5px 20px 2px rgba(208, 234, 243, 0.664);
 }
 
 .toogle-heading{
@@ -289,18 +305,15 @@ p.toggle-text{
 
 .toggle-image{
   display: none;
+  padding:3% 5%;
 }
 
 .toggle-image img {
   width:100%;
 }
 
-.toggle-data a:hover{
-  text-decoration: none;
-  color: #193347;
-}
 
-.toggle-link {
+.panel-title {
   text-decoration: none;
   color: #193347;
   font-size: 18px;
@@ -326,6 +339,7 @@ p.toggle-text{
   margin: auto ;
 }
 
+
 /* pricing */
 
 .pricing, .engagement, .manage{
@@ -334,8 +348,8 @@ p.toggle-text{
 }
 
 .pricing-subtitle{
-  width:70%;
-  margin:-50px 0 0 80px;
+  width:68%;
+  margin:-65px 0 0 80px;
 }
 
 .text-up{
@@ -363,7 +377,7 @@ p.toggle-text{
   font-weight: 300;
 }
 
-/* engagement */
+/* engagement Section*/
 
 .eng-row{
   margin-left: 30px;
@@ -380,7 +394,7 @@ p.toggle-text{
 
 .eng-subtitle{
   text-align: right;
-  margin: 0px 185px 20px 0px;
+  margin: -10px 160px 25px 0px;
 }
 
 .eng-links{
@@ -496,16 +510,19 @@ input.hs-button.primary.large:hover{
 }
 
 label{
-  opacity: 0.7;
+  opacity: 0.6;
   color: #193347;
   font-size: 20px;
+  font-weight: 400;
   position: absolute;
   top:25px;
+  margin-left:30px;
 }
 
 ::-webkit-input-placeholder {
   color: #193347;
   font-size: 20px;
+  opacity: 0.6;
 }
 ::-moz-placeholder {
   color: #193347;
@@ -691,27 +708,32 @@ li{
 }
 
 .hs_submit{
-  padding: 100px 0px;
+  padding: 100px 0px 0px;
 }
 
 /********************
      Contact
 *********************/
 
-.contact{
-  padding:150px 150px 0 ;
+.contact-section{
   position: relative;
+}
 
+.contact{
+  margin:150px 150px 0 ;
+  position: relative;
 }
 
 .bg-image {
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translate(-10%, 36%);
+  transform: translate(-10%, 33%) scale(0.9,0.9);
 }
 
 .contact-row{
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   position: relative;
@@ -772,7 +794,7 @@ li{
 
 .contacts-helmet {
   display: block;
-  transform: translate(90px, 50px);
+  transform: translate(130px, 50px) scale(1.2);
   max-width: 100%;
 }
 
@@ -822,13 +844,9 @@ li{
 
 .footer {
   position: relative;
-  padding: 200px 0 20px 80px;
+  padding: 150px 0 20px 80px;
   background: url(../images/footer-bg.png);
   background-size: cover;
-}
-
-.hide-footer{
-  display: none;
 }
 
 .footer-logo-wrap {
