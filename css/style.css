@@ -81,7 +81,7 @@ h4 {
 .small-icon-wrap {
   position: absolute;
   width: 60%;
-  /* z-index: 10; */
+  z-index: 10;
 }
 
 /* Home */
