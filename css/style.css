@@ -11,8 +11,7 @@ html * {
 }
 
 body{
-  background: url(../images/background\ copy.png);
-  background-color:#dae6ed;
+  background: url(../images/background.png);
   background-repeat: no-repeat; 
   background-size: cover;
   color: #193347;
@@ -82,6 +81,7 @@ h4 {
 .small-icon-wrap {
   position: absolute;
   width: 60%;
+  z-index: 10;
 }
 
 /* Home */
@@ -169,32 +169,32 @@ h4 {
 
 .home-icon:nth-child(1){
   max-width: 75px;
-  left: 10px;
-  top: -57px;
+  left: 680px;
+  top: 750px;
 }
   
 .home-icon:nth-child(2){
   max-width: 55px;
-  left: 840px;
-  top: 565px;
+  left: -60px;
+  top: -80px;
 }
   
 .home-icon:nth-child(3){
-  max-width: 30px;
-  left: 860px;
-  top: 495px;
+  max-width: 27px;
+  left: 28px;
+  top: -55px;
 }
   
 .home-icon:nth-child(4){
   max-width: 10px;
-  left: 905px;
-  top: 535px;
+  left: -50px;
+  top: 20px;
 }
   
 .home-icon:nth-child(5){
-  max-width: 25px;
-  left: -40px;
-  top: 25px;
+  max-width: 22px;
+  left: 645px;
+  top: 815px;
 }
 
 
@@ -229,8 +229,8 @@ p.features-text {
 }
 
 .icon{
-  height: 25px;
-  width: 25px;
+  height: 27px;
+  width: 27px;
   display: block;
   background-image: url(../images/chackmark-blue.svg);
   background-repeat: no-repeat;
@@ -246,13 +246,6 @@ p.features-text {
 .toggle {
   position: relative;
   padding: 2% 5% 0% 5%;
-}
-
-.togglt-bg-image {
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  transform: translate(-10%, 36%);
 }
 
 .toggle .custom-title.heading-up{
@@ -329,8 +322,8 @@ p.toggle-text{
 }
 
 .check-icon{
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   display: block;
   background-image: url(../images/chackmark-blue.svg);
   background-repeat: no-repeat;
@@ -342,7 +335,7 @@ p.toggle-text{
 
 /* pricing */
 
-.pricing, .engagement, .manage{
+.pricing{
   position: relative;
   padding: 2% 7% 0% 10%;
 }
@@ -377,7 +370,36 @@ p.toggle-text{
   font-weight: 300;
 }
 
+.pricing-icon{
+  display: block;
+  max-width: 40px;
+  position: absolute;
+}
+
+.pricing-icon:nth-child(1) {
+  max-width: 33px;
+  left: 559px;
+  top: 54px;
+}
+
+.pricing-icon:nth-child(2) {
+  max-width: 12px;
+  left: 603px;
+  top: 82px;
+}
+
+.pricing-icon:nth-child(3) {
+  max-width: 40px;
+  left: -45px;
+  bottom: 109px;
+}
+
 /* engagement Section*/
+
+.engagement{
+  position: relative;
+  padding: 0% 7% 0% 10%;
+}
 
 .eng-row{
   margin-left: 30px;
@@ -405,7 +427,37 @@ p.toggle-text{
 
 }
 
+.eng-icon{
+  display: block;
+  max-width: 40px;
+  position: absolute;
+}
+
+.eng-icon:nth-child(1) {
+  max-width: 12px;
+  left: 1178px;
+  top: -231px;
+}
+
+.eng-icon:nth-child(2) {
+  max-width: 55px;
+  left: 1185px;
+  bottom: 130px;
+}
+
+.eng-icon:nth-child(3) {
+  max-width: 22px;
+  left: 725px;
+  bottom: 395px;
+}
+
+
 /* manage */
+
+.manage{
+  position: relative;
+  padding: 2% 7% 0% 10%;
+}
 
 .manage .cl-2{
   margin-left: 50px;
@@ -413,6 +465,30 @@ p.toggle-text{
 
 .manage-subtitle{
   margin:-50px 0px 0px 5px;
+}
+
+.manage-icon{
+  display: block;
+  max-width: 40px;
+  position: absolute;
+}
+
+.manage-icon:nth-child(1) {
+  max-width: 12px;
+  left: -21px;
+  top: -220px;
+}
+
+.manage-icon:nth-child(2) {
+  max-width: 55px;
+  left: -80px;
+  bottom: 136px;
+}
+
+.manage-icon:nth-child(3) {
+  max-width: 40px;
+  left: 710px;
+  bottom: 0px;
 }
 
 /* button */
@@ -728,7 +804,7 @@ li{
   position: absolute;
   left: 0;
   bottom: 0;
-  transform: translate(-10%, 33%) scale(0.9,0.9);
+  transform: translate(-10%, 35%) scale(0.9,0.9);
 }
 
 .contact-row{
@@ -810,32 +886,32 @@ li{
 
 .contact-icon:nth-child(1) {
   max-width: 72px;
-  left: 520px;
-  top: -480px;
+  left: 490px;
+  top: -410px;
 }
 
 .contact-icon:nth-child(2) {
   max-width: 28px;
-  left: -53px;
-  bottom: 56px;
+  left: 33px;
+  bottom: -20px;
 }
 
 .contact-icon:nth-child(3) {
   max-width: 60px;
-  left: -7px;
-  bottom: -10px;
+  left: 85px;
+  bottom: -80px;
 }
 
 .contact-icon:nth-child(4) {
   max-width: 12px;
-  left: -81px;
-  bottom: 23px;
+  left: 10px;
+  bottom: -55px;
 }
 
 .contact-icon:nth-child(5) {
   max-width: 32px;
-  left: 485px;
-  top: -390px;
+  left: 465px;
+  top: -325px;
 }
 
 /**************
