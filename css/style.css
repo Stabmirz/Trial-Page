@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 html * {
   max-height: 999999px;
-}
+} */
 
 body{
   background: url(../images/background.png);
@@ -48,8 +48,7 @@ body{
   margin: 0; 
   color: #000;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(45deg, #cbe1ef, #f0f8fe);
-  background-image: -o-linear-gradient(45deg, #cbe1ef, #f0f8fe);
+  background: linear-gradient(to right, #c1dced 0%, #f0f8fe 100%);
   -webkit-background-clip: text;
 }
 
@@ -143,10 +142,6 @@ h4 {
   line-height: 1.2;
   text-transform: none;
   text-align: center;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(45deg,#74a9d0, #98c3de);
-  background-image: -o-linear-gradient(45deg, #74a9d0, #98c3de);
-  -webkit-background-clip: text;
 }
 
 #title-span{
@@ -156,10 +151,16 @@ h4 {
 .home-title.heading-up{
   text-align: left;
   margin-bottom:-50px;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(105deg, #b6d7ea 45%,#66a0cc 75%);
+  -webkit-background-clip: text;
 }
 
 .home-title.heading-down{
   text-align: right;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(55deg, #b6d7ea 50%,#66a0cc 85%);
+  -webkit-background-clip: text;
 }
 
 .home-icon{
@@ -407,6 +408,9 @@ p.toggle-text{
 
 .engagement .heading-up{
   text-align: right;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #c1dced 40%, #f0f8fe 100%);
+  -webkit-background-clip: text;
 }
 
 .engagement .heading-down{
