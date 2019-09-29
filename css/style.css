@@ -590,6 +590,12 @@ p.toggle-text{
   padding: 2% 7% 0% 10%;
 }
 
+.pricing .custom-title{
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(55deg, #cbe1ef 35%, #e3f1f7 65%);
+  -webkit-background-clip: text;
+}
+
 .pricing-subtitle{
   width:68%;
   margin:-65px 0 0 80px;
@@ -669,7 +675,7 @@ p.toggle-text{
   text-align: left;
   margin:-140px 0px -50px 0px;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(65deg, #cbe1ef 35%, #eaf3f7 55%);
+  background-image: -webkit-linear-gradient(65deg, #cbe1ef 35%, #eaf3f7 65%);
   -webkit-background-clip: text;
 }
 
