@@ -726,6 +726,12 @@ p.toggle-text{
   padding: 2% 7% 0% 10%;
 }
 
+.manage .custom-title{
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(55deg, #cbe1ef 35%, #e3f1f7 55%);
+  -webkit-background-clip: text;
+}
+
 .manage .cl-2{
   margin-left: 50px;
 }
