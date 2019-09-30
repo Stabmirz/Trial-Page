@@ -143,6 +143,11 @@ h4 {
   line-height: 1.2;
   text-transform: none;
   text-align: center;
+  /* text-shadow: 0 3px 5px rgba(99, 186, 248, 0.4); */
+  /* text-shadow: 0 3px 5px rgba(191, 221, 243, 0.4); */
+  text-shadow: 1px -2px 20px rgba(191, 221, 243, 0.4);
+  
+  
 }
 
 #title-span{
@@ -153,14 +158,15 @@ h4 {
   text-align: left;
   margin-bottom:-80px;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(105deg, #b6d7ea 45%,#66a0cc 75%);
+  background-image:-webkit-linear-gradient(105deg, #90bfda 45%,#3a83bb 75%);
+  /* background-image: -webkit-linear-gradient(105deg, #b6d7ea 45%,#66a0cc 75%); */
   -webkit-background-clip: text;
 }
 
 .home-title.heading-down{
   margin-left:125px;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(55deg, #b6d7ea 50%,#66a0cc 85%);
+  background-image: -webkit-linear-gradient(55deg, #90bfda 50%,#3a83bb 85%);
   -webkit-background-clip: text;
 }
 
@@ -531,6 +537,17 @@ h5{
   background-color: white;
   box-shadow:4px 5px 20px 2px rgba(208, 234, 243, 0.664);
 }
+
+.panel:hover{
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow:4px 5px 20px 2px rgba(141, 201, 223, 0.664);
+}
+
+/* .pricing-card:hover img{
+  transform: scale(1.1);
+  transition: .4s ease-in;
+} */
 
 .toogle-heading{
   margin-top:15px;
@@ -1081,8 +1098,6 @@ button.btn-style:focus{
     display: none;
   }
 }
-
-
 
 @media only screen and (max-width:600px){
   
