@@ -1403,7 +1403,7 @@ button.btn-style:focus{
   }
 
   .engagement .heading-down {
-    margin: -40px 0px -5px 0px;
+    margin: -38px 0px -5px 0px;
   }
 
   .eng-subtitle{
@@ -1541,12 +1541,20 @@ button.btn-style:focus{
     margin-left: 60px;
   }
 
+  .pricing-subtitle{
+    width:73%;
+  }
+
   h5{
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .eng-links a, .link-style{
     font-size: 16px;
+  }
+
+  .eng-row h2.custom-title.heading-down{
+    font-size: 42px;
   }
 
 }
