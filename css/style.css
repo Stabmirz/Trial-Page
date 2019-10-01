@@ -145,10 +145,10 @@ h4 {
   text-align: center;
   /* text-shadow: 0 3px 5px rgba(99, 186, 248, 0.4); */
   /* text-shadow: 0 3px 5px rgba(191, 221, 243, 0.4); */
-  text-shadow: 1px -2px 20px rgba(191, 221, 243, 0.4);
-  
-  
+  /* text-shadow: 1px -2px 20px rgba(191, 221, 243, 0.4); */
+  text-shadow:1px -6px 7px rgba(191, 221, 243, 0.4);
 }
+
 
 #title-span{
   font-size: 113px;
@@ -213,11 +213,8 @@ h4 {
 input.hs-button.primary.large{
   border:none;
   outline: none;
-  /* overflow: hidden; */
   display: block;
   margin: auto;
-  /* text-align: center; */
-  /* position: relative; */
   text-decoration: none;
   text-transform: lowercase;
   cursor: pointer;
@@ -249,8 +246,8 @@ label{
   font-size: 20px;
   font-weight: 300;
   position: absolute;
-  top:25px;
-  margin-left:30px;
+  top:20px;
+  margin-left:20px;
 }
 
 ::-webkit-input-placeholder {
@@ -286,14 +283,13 @@ input:focus::placeholder{
 
 
 #label-numemployees-ecc29b24-00c4-42c3-8215-f31ba412f934,
-#label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934{
+#label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934
+{
   top:-50px;
-  width: 100%;
 }
 
-#label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934{
-  width:44%;
-  top: 5px;
+#label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934{
+  width:40%;
 }
 
 .hs-numemployees{
@@ -302,21 +298,22 @@ input:focus::placeholder{
   margin: 50px auto 0px auto;
 }
 
-.hs_do_you_have_an_lms_radio{
-  width:50%;
+.hs_how_many_topics_do_you_train_on_annually_{
+  width: 50%;
   float: right;
-  margin: 50px auto 0px auto;
+  margin: -150px auto 0px auto;
 }
 
-.hs_how_many_topics_do_you_train_on_annually_{
+.hs_do_you_have_an_lms_radio{
   clear: left;
 }
 
-.hs_how_many_topics_do_you_train_on_annually_ .input{
+.hs_do_you_have_an_lms_radio .input{
   float: right;
-  width:47%;
-  margin: auto;
+  width:60%;
+  
 }
+
 
 .hs-input{
   border: none;
@@ -327,7 +324,7 @@ input:focus::placeholder{
   border-radius: 5px;
   width: 100%;
   height: 80px;
-  box-shadow: 0 13px 50px rgba(219,235,244,0.6);
+  box-shadow: 0px 2px 20px 0px rgba(193, 214, 228, 0.6);
   background-color: #fff;
   color:  #193347;
   padding: 0px 30px;
@@ -343,9 +340,11 @@ input:focus::placeholder{
   background-color: white;
   background-position: 10% 50%;
   background-size: 18px;
-  padding: 0px 50px;
+  padding: 10px 50px;
+  font-weight: 300;
   text-align-last: end;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 .hs_how_many_topics_do_you_train_on_annually_ select{
@@ -355,8 +354,10 @@ input:focus::placeholder{
   background-color: white;
   background-position: 90% 50%;
   background-size: 18px;
-  padding: 0px 40px;
+  padding: 10px 40px;
   font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
 .hs-form-radio .hs-input{
@@ -407,7 +408,7 @@ li{
   content: '';
   position: absolute;
   top: -17px;
-  right: -77px;
+  right: -85px;
   width: 63px;
   height: 63px;
   box-shadow: 0 15px 25px rgba(25, 51, 71, 0.1), inset 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -430,7 +431,7 @@ li{
   background-color: #d3de3f;
   border: 15px solid rgb(255, 255, 255);
   position: absolute;
-  right: -77px;
+  right: -85px;
   top:-17px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
@@ -444,7 +445,7 @@ li{
 }
 
 .hs_submit{
-  padding: 100px 0px 0px;
+  padding: 85px 0px 0px;
 }
 
 
@@ -543,11 +544,6 @@ h5{
   background-color: #ffffff;
   box-shadow:4px 5px 20px 2px rgba(141, 201, 223, 0.664);
 }
-
-/* .pricing-card:hover img{
-  transform: scale(1.1);
-  transition: .4s ease-in;
-} */
 
 .toogle-heading{
   margin-top:15px;
@@ -1087,9 +1083,7 @@ button.btn-style:focus{
 
 }
 
-@media only screen and (max-width: 350px){
 
-}
 
 
 @media only screen and (max-width: 767px){
@@ -1101,43 +1095,39 @@ button.btn-style:focus{
 
 @media only screen and (max-width:600px){
   
+  .content-wrapper{
+    width:95%;
+  }
+
   .home{
-    padding: 20px 0 60px;
+    padding:0;
   }
 
-
-  .home-col-1 {
-    width:90%;
-    margin: auto;
+  .home-row{
+    display: flex;
+    flex-direction: column;
   }
 
-  .home-col-2 {
+  .home-col-1,  .home-col-2 {
     width:100%;
-    margin: auto;
+    margin: 0;
   }
 
-  .home-row {
-    flex-direction: column;
-  }
-
-  .row {
-    flex-direction: column;
-    margin:0px;
+  .home-text{
+    margin-bottom: 50px;
   }
 
   .custom-title {
     font-size: 55px;
-    line-height: .8;
     text-align: center;
   }
 
   h4{
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 18px;
   }
 
   .link-style{
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .btn-style{
@@ -1148,100 +1138,289 @@ button.btn-style:focus{
     font-size: 20px;
   }
 
-  .home-play-btn{
-    top: 45%;
-    width: 60px;
-  }
-
-
-
   /*  form */
 
-  .hs-form label {
-    font-size: 16px;
-    top: -30px;
-  }
-
-  .hs-form .hs-form-field {
-    margin-bottom: 50px;
-  }
-
-  select#numemployees.hs-input{
-    font-size: 14px;
-  }
-
-  select{
-    background-position: 90% 45%;
-    background-size: 18px;
-    text-align-last: left;
-  }
-
-  [type="radio"]:not(:checked) + span:before {
-    left: 110px;
-    top: -12px;
-    width: 40px;
-    height: 40px;
-    border: 10px solid rgb(255, 255, 255);
-  }
-
-  [type="radio"]:checked + span:after,
-  [type="radio"]:not(:checked) + span:after {
-    width: 20px;
-    height: 20px;
-    left: 120px;
-    top: 2px;
-  }
-
-  #do_you_have_an_lms_radio0-06257986-1392-4aad-86ec-bba38f21f752:checked + span:before{
-    display: none;
-    width: 80px;
-    height: 110px;
-  }
-
-  .hs-form-radio .hs-form-radio-display span{
-    font-size:20px;
-    display: table;
-  }
-
-  textarea#multi_line_text_property {
-    padding: 10px 10px;
-  }
-
-  .form-label{
-    text-align: center;
-    font-size: 12px;
-    margin: 20px 0px 20px 0px;
-  }
 
   ul{
     width: 100%;
-    margin: 0 0 4% 0;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  li{
-    width: 65%;
-    display: flex;
-    margin: auto 31%;
-  }
-
-  .hs-form-radio p {
-    font-size: 18px;
-    width: 100px;
-  }
-
-  .input .hs-input{
-    height: 50px;
-    padding: 10px 10px;
   }
 
   .hs_submit{
     align-self: center;
+  }
+
+  .home-title{
+    font-size: 110px;
+  }
+
+  .home-title.heading-up{
+    margin-bottom: -45px;
+  }
+  
+  .home-title.heading-down{
+    margin-left: 70px;
+  }
+  
+  #title-span{
+    font-size: 65px;
+  }
+  
+
+  .home-text{
+    font-size: 18px;
+  }
+
+
+  /* Form */
+
+  input.hs-button.primary.large{
+    font-size: 24px;
+    height: 60px;
+  }
+
+  .input .hs-input{
+    height: 55px;
   } 
+  
+  .hs-form .hs-form-field {
+    margin-bottom: 20px;
+  }
+
+  label{
+    font-size: 16px;
+    margin-left:0px;
+    top:10px;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  ::-moz-placeholder {
+    font-size: 16px;
+  }
+  :-ms-input-placeholder {
+    font-size: 16px;
+  }
+  :-moz-placeholder {
+    font-size: 16px;
+  }
+  
+
+  #label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934{
+    width: 100%;
+    padding-left: 5px;
+  }
+  
+  .hs_do_you_have_an_lms_radio .input {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+
+  .hs-form .hs-form-field {
+    margin-bottom: 20px;
+  }
+
+  .hs-numemployees select, .hs_how_many_topics_do_you_train_on_annually_ select{
+   background-position: 90% 45%;
+   background-size: 18px;
+   text-align-last: left;
+   font-size: 16px;
+   padding: 10px 30px;
+
+  }
+
+  #label-numemployees-ecc29b24-00c4-42c3-8215-f31ba412f934 {
+    top: -20px;
+    padding-left: 5px;
+  }
+
+  #label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934 {
+    top: -35px;
+    padding-left: 5px;
+  }
+
+  .hs_how_many_topics_do_you_train_on_annually_{
+    margin-top:170px;
+  }
+
+  .hs_numemployees, .hs_how_many_topics_do_you_train_on_annually_ {
+    width: 100%;
+    float: none;
+  }
 
   
+  [type="radio"]:not(:checked) + span:before {
+    right: -65px;
+    width: 50px;
+    top:-13px;
+    height: 50px;
+    border: 12px solid rgb(255, 255, 255);
+  }
+  
+  
+  [type="radio"]:checked + span:after,
+  [type="radio"]:not(:checked) + span:after {
+    top:-13px;
+    width: 50px;
+    height: 50px;
+    border: 12px solid rgb(255, 255, 255);
+    right: -65px;
+  }
+  
+  
+  .hs_submit{
+    padding: 25px 0px 0px;
+  }
+
+  /* Features */
+
+  .features {
+    padding-top: 50px;
+    padding-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  .features-body{
+    width:100%;
+    margin: 0px;
+  }
+
+  .features-row{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-col {
+    width: 100%;
+  }  
+
+  h3 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  p.features-text{
+    font-size: 16px;
+  }
+
+  /* toggle */
+
+  .toggle{
+    padding:0;
+  }
+
+  .toggle-datas{
+    padding-left:0;
+  }
+
+  .toggle .custom-title.heading-up {
+    margin-bottom: -20px;
+  }
+
+  .toggle .custom-title.heading-down {
+    margin-left: 120px;
+    margin-bottom: -10px;
+    line-height: 1;
+  }
+
+  h5{
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .panel-title{
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0px 5px;
+  }
+
+  .toggle-datas{
+    margin: 20px 0 0;
+  }
+
+  p.toggle-text{
+    line-height: 1.4;
+  }
+
+  /* Pricing */
+
+  .pricing{
+    padding: 0%;
+  }
+
+  .pricing-row, .manage-row{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+  }
+
+
+  .pricing-subtitle {
+    width: 60%;
+    margin: auto;
+    margin-top: -17px;
+  }
+
+  .pricing-para, .eng-para, .manage-para {
+    font-size: 16px;
+  }
+
+  .cl-2 {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+
+
+
+  /* Engagement */
+
+  .engagement{
+    padding: 0% 0%;
+    margin:10% 0%;
+  }
+
+  .eng-row{
+    margin-left:0;
+  }
+
+  .engagement .heading-down {
+    margin: -48px 0px -5px 0px;
+  }
+
+  .eng-subtitle{
+    margin:0;
+  }
+
+  .eng-para{
+    margin-top:10px;
+  }
+
+  .eng-links{
+  width: auto;
+
+  }
+
+
+  /* Manage */
+
+  .manage{
+   padding: 2% 0% 0% 0%;
+  }
+
+  .manage-subtitle {
+    margin: -12px 0px 0px 40px;
+  }
+
+  .manage .cl-2{
+    margin-left: 0;
+  }
+
   /* contact */
+  .contact{
+    margin:0;
+  }
 
   .contacts-subtitle {
     font-size: 20px;
@@ -1320,38 +1499,59 @@ button.btn-style:focus{
 
 }
 
+@media only screen and (max-width: 350px){
+
+  .home-title.heading-up, .home-title.heading-down {
+    font-size: 96px;
+  }
+
+
+  .request{
+    margin-bottom: 10px;
+  }
+
+  .custom-title {
+    font-size: 45px;
+  }
+
+  .toggle .custom-title.heading-down {
+    margin-left: 60px;
+  }
+
+  h5{
+    font-size: 16px;
+  }
+
+  .engagement .heading-down {
+    margin: -40px 0px -5px 0px;
+  }
+
+  .eng-links a, .link-style{
+    font-size: 16px;
+  }
+
+}
+
 @media only screen and (min-width:600px) and (max-width:767px){
   
   .home{
-    padding: 20px 0 60px;
+    padding:0;
   }
-
-  .heading-up{
-    margin-bottom: -30px;
-  }
-
-  .heading-down{
-    margin: 30px 0px 0px 0px;
-  }
-
-  .home-col-1 {
-    width:90%;
-    margin: auto;
-  }
-
-  .home-col-2 {
-    width:80%;
-    margin: auto;
-  }
-
-  .row {
+  .home-row{
+    display: flex;
     flex-direction: column;
-    margin:0px;
+  }
+
+  .home-col-1,  .home-col-2 {
+    width:100%;
+  }
+
+  .home-text{
+    margin-bottom: 50px;
   }
 
   .custom-title {
     font-size: 75px;
-    line-height: .8;
     text-align: center;
   }
 
@@ -1373,12 +1573,6 @@ button.btn-style:focus{
 
   /*  form */
 
-  .hs-form label {
-    font-size: 18px;
-    top: -35px;
-  }
-
-
   .hs-form .hs-form-field {
     margin-bottom: 55px;
   }
@@ -1393,12 +1587,8 @@ button.btn-style:focus{
     text-align-last: left;
   }
 
-  textarea#multi_line_text_property {
-    padding: 10px 10px;
-  }
-
   ul{
-    width: 98%;
+    width: 100%;
   }
 
   .input .hs-input{
@@ -1410,8 +1600,249 @@ button.btn-style:focus{
     align-self: center;
   }
 
+  .home-title{
+    font-size: 110px;
+  }
+
+  .home-title.heading-up{
+    margin-bottom: -45px;
+  }
+  
+  .home-title.heading-down{
+    margin-left: 70px;
+  }
+  
+  #title-span{
+    font-size: 65px;
+  }
+  
+
+  .home-text{
+    font-size: 18px;
+  }
+  
+  .custom-title {
+    font-size: 80px;
+  }
+
+
+  /* Form */
+
+  input.hs-button.primary.large{
+    font-size: 24px;
+    height: 60px;
+  }
+
+  .input .hs-input{
+    height: 55px;
+  } 
+  
+  .hs-form .hs-form-field {
+    margin-bottom: 20px;
+  }
+
+  label{
+    font-size: 15px;
+    margin-left:0px;
+    top:10px;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  ::-moz-placeholder {
+    font-size: 16px;
+  }
+  :-ms-input-placeholder {
+    font-size: 16px;
+  }
+  :-moz-placeholder {
+    font-size: 16px;
+  }
+  
+  .hs-numemployees select, .hs_how_many_topics_do_you_train_on_annually_ select{
+    background-size: 14px;
+    padding: 0px 15px;
+    font-size: 14px;
+  }
+
+  #label-numemployees-ecc29b24-00c4-42c3-8215-f31ba412f934,
+  {
+    left: 5px;
+  }
+
+  #label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934
+  {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  
+  #label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934{
+    left: 5px;
+    width: 50%;
+  }
+
+  .hs-numemployees .input, .how_many_topics_do_you_train_on_annually_ .input{
+    margin-top: -30px;
+  }
+
+  .hs_how_many_topics_do_you_train_on_annually_{
+    margin: -114px auto 0px auto;
+  }
+
+
+  .hs_do_you_have_an_lms_radio .input {
+    width: 50%;
+  }
+
+  .hs-form-radio .hs-input{
+    height: auto;
+    margin-top:-17px;
+  }
+  
+  [type="radio"]:not(:checked) + span:before {
+    right: -65px;
+    width: 50px;
+    top:-13px;
+    height: 50px;
+    border: 12px solid rgb(255, 255, 255);
+  }
+  
+  
+  [type="radio"]:checked + span:after,
+  [type="radio"]:not(:checked) + span:after {
+    top:-13px;
+    width: 50px;
+    height: 50px;
+    border: 12px solid rgb(255, 255, 255);
+    right: -65px;
+  }
+  
+  
+  .hs_submit{
+    padding: 55px 0px 0px;
+  }
+
+  /* Features */
+
+  .features {
+    padding-top: 50px;
+    padding-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  .features-body{
+    width:100%;
+    margin: 0px;
+  }
+
+  .features-row{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features-col {
+    width: 100%;
+  }  
+
+  h3 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  p.features-text{
+    font-size: 16px;
+  }
+
+  /* toggle */
+
+  .toggle{
+    padding:0;
+  }
+
+  .toggle-datas{
+    padding-left:0;
+  }
+
+  .toggle .custom-title.heading-up {
+    margin-bottom: -30px;
+  }
+
+  .toggle .custom-title.heading-down {
+    margin-left: 120px;
+    margin-bottom: -10px;
+    line-height: 1;
+  }
+
+  h5{
+    font-size: 26px;
+  }
+
+  .panel-title{
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0px 5px;
+  }
+
+  p.toggle-text{
+    line-height: 1.4;
+  }
+
+  /* Pricing */
+
+  .pricing{
+    padding: 0%;
+  }
+
+  .pricing-row, .manage-row{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+  }
+
+
+  .pricing-subtitle {
+    width: 48%;
+    margin: auto;
+    margin-top: -19px;
+  }
+
+  .pricing-para, .eng-para, .manage-para {
+    font-size: 16px;
+  }
+
+  .cl-2 {
+    margin-left: 30px;
+    margin-top: 55px;
+  }
+
+  /* Engagement */
+
+  .engagement{
+    padding: 0% 0%;
+  }
+
+  .engagement .heading-down{
+    margin: -65px 0px -15px 0px;
+  }
+
+  /* Manage */
+
+  .manage{
+   padding: 2% 0% 0% 0%;
+  }
+
+  .manage-subtitle {
+    margin: -12px 0px 0px 140px;
+  }
+
   
   /* contact */
+
+  .contact{
+    margin: 5% 0 0 0;
+  }
 
   .contacts-subtitle {
     font-size: 20px;
@@ -1563,23 +1994,37 @@ button.btn-style:focus{
   
   .hs-numemployees select, .hs_how_many_topics_do_you_train_on_annually_ select{
     background-size: 14px;
-    padding: 0px 20px;
+    padding: 0px 15px;
     font-size: 14px;
   }
 
-  #label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934 {
-    top: 0px;
-    width:46%;
-  }
-
   #label-numemployees-ecc29b24-00c4-42c3-8215-f31ba412f934,
-  #label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934 {
-    top: -45px;
-    width: 100%;
+  {
+    left: 5px;
   }
 
+  #label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934
+  {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  
   #label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934{
-    padding-left: 10px;
+    left: 5px;
+    width: 50%;
+  }
+
+  .hs-numemployees .input, .how_many_topics_do_you_train_on_annually_ .input{
+    margin-top: -30px;
+  }
+
+  .hs_how_many_topics_do_you_train_on_annually_{
+    margin: -105px auto 0px auto;
+  }
+
+
+  .hs_do_you_have_an_lms_radio .input {
+    width: 50%;
   }
 
   .hs-form-radio .hs-input{
@@ -1826,19 +2271,34 @@ button.btn-style:focus{
     font-size: 16px;
   }
 
-  #label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934 {
-    top: 0px;
-    width:46%;
-  }
-
   #label-numemployees-ecc29b24-00c4-42c3-8215-f31ba412f934,
-  #label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934 {
-    top: -45px;
-    width: 100%;
+  #label-how_many_topics_do_you_train_on_annually_-ecc29b24-00c4-42c3-8215-f31ba412f934
+  {
+    left: 5px;
+  }
+  
+  #label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934{
+    width:50%;
+    left: 5px;
+  }
+  
+  .hs-numemployees{
+    width:47%;
+    float: left;
+    margin: 50px auto 0px auto;
+  }
+  
+  .hs_how_many_topics_do_you_train_on_annually_{
+    width: 50%;
+    float: right;
+    margin: -120px auto 0px auto;
   }
 
-  #label-do_you_have_an_lms_radio-ecc29b24-00c4-42c3-8215-f31ba412f934 {
-    padding-left: 10px; 
+  
+  .hs_do_you_have_an_lms_radio .input{
+    float: right;
+    width:50%;
+    
   }
 
   .hs-form-radio .hs-input{
@@ -1846,7 +2306,7 @@ button.btn-style:focus{
   }
   
   [type="radio"]:not(:checked) + span:before {
-    right: -56px;
+    right: -65px;
     width: 50px;
     top:-13px;
     height: 50px;
@@ -1860,7 +2320,7 @@ button.btn-style:focus{
     width: 50px;
     height: 50px;
     border: 12px solid rgb(255, 255, 255);
-    right: -56px;
+    right: -65px;
   }
   
   [type="radio"]:not(:checked) + span:after {
