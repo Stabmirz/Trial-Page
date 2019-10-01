@@ -1225,8 +1225,12 @@ button.btn-style:focus{
 
   }
 
+  .hs-numemployees select{
+    margin-top:28px;
+  }
+
   #label-numemployees-ecc29b24-00c4-42c3-8215-f31ba412f934 {
-    top: -20px;
+    top: -5px;
     padding-left: 5px;
   }
 
@@ -1236,12 +1240,13 @@ button.btn-style:focus{
   }
 
   .hs_how_many_topics_do_you_train_on_annually_{
-    margin-top: -140px;;
+    margin-top: -143px;;
   }
 
 
   .hs_numemployees.hs-numemployees{
     margin-bottom: 200px;
+    margin-top: 10px;
   }
 
   .hs_numemployees, .hs_how_many_topics_do_you_train_on_annually_ {
